@@ -1,0 +1,104 @@
+body {
+	/* we manually set the default font-family for the content */
+	font-family: Mukta, sans-serif;
+	letter-spacing: 0.5px;
+	/* font-size is 16px by default, but we are specifying it 16px 
+       explicitly as the <code> changes font-size */
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/* we change the font-family for just the headings, rest elems have 
+       font-family defined in the body */
+	font-family: Bitter, serif;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 80px;
+	font-weight: 400;
+	letter-spacing: -1.5px;
+}
+
+h2 {
+	font-size: 50px;
+	letter-spacing: -0.5px;
+}
+
+h3 {
+	font-size: 38px;
+	letter-spacing: 0px;
+}
+h4 {
+	font-size: 30px;
+	letter-spacing: 0.25px;
+}
+
+h5 {
+	font-size: 24px;
+	letter-spacing: 0.25px;
+}
+
+h6 {
+	font-size: 20px;
+	letter-spacing: 0.25px;
+}
+
+code {
+	color: #e95400;
+	font-weight: bold;
+}
+
+/* notice how the content area is made kinda responsive */
+.content {
+	margin: 0 auto;
+	max-width: 900px;
+	padding: 32px;
+}
+
+.content h3 {
+	text-transform: capitalize;
+}
+
+.blog-info {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Bitter, serif;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+.blog-info span {
+	color: #e95400;
+}
+
+.headline {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 0px;
+	margin: 40px 0;
+}
+
+.quote {
+	font-style: italic;
+	font-size: 14px;
+	border-left: 2px solid #e95400;
+	padding-left: 16px;
+	margin: 32px 0 32px 32px;
+}
+
+/* using <blockquote> and <cite> for the quote */
+.quote cite {
+	display: block;
+	font-weight: bold;
+	margin-left: 20px;
+}
