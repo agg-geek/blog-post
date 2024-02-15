@@ -1,9 +1,6 @@
 body {
-	/* we manually set the default font-family for the content */
 	font-family: Mukta, sans-serif;
 	letter-spacing: 0.5px;
-	/* font-size is 16px by default, but we are specifying it 16px 
-       explicitly as the <code> changes font-size */
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
@@ -15,8 +12,6 @@ h3,
 h4,
 h5,
 h6 {
-	/* we change the font-family for just the headings, rest elems have 
-       font-family defined in the body */
 	font-family: Bitter, serif;
 	font-weight: 500;
 }
@@ -56,7 +51,6 @@ code {
 	font-weight: bold;
 }
 
-/* notice how the content area is made kinda responsive */
 .content {
 	margin: 0 auto;
 	max-width: 900px;
@@ -96,9 +90,41 @@ code {
 	margin: 32px 0 32px 32px;
 }
 
-/* using <blockquote> and <cite> for the quote */
 .quote cite {
 	display: block;
 	font-weight: bold;
 	margin-left: 20px;
+}
+
+footer {
+	background-color: #863ae8;
+}
+
+footer ul {
+	/* notice! */
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+
+	/* to make the footer have certain height, we don't specify 
+      height: 100px on the footer elem itself as it will break stuff, 
+      so we instead specify padding on the ul itself */
+	padding: 28px 0;
+
+	list-style-type: none;
+}
+
+footer li {
+	display: inline;
+	padding: 0 16px;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
 }
