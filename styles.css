@@ -20,6 +20,7 @@ h1 {
 	font-size: 80px;
 	font-weight: 400;
 	letter-spacing: -1.5px;
+	margin: 0;
 }
 
 h2 {
@@ -49,6 +50,31 @@ h6 {
 code {
 	color: #e95400;
 	font-weight: bold;
+}
+
+.hero {
+	background-color: #863ae8;
+	height: 100vh;
+	color: white;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero h1,
+.hero p {
+	width: 75%;
+	max-width: 900px;
+	margin: 16px 0;
+}
+
+.hero hr {
+	color: white;
+	width: 50%;
+	margin: 32px 0;
 }
 
 .content {
@@ -101,17 +127,11 @@ footer {
 }
 
 footer ul {
-	/* notice! */
 	width: 100%;
 	max-width: 900px;
 	margin: 0 auto;
 	text-align: center;
-
-	/* to make the footer have certain height, we don't specify 
-      height: 100px on the footer elem itself as it will break stuff, 
-      so we instead specify padding on the ul itself */
 	padding: 28px 0;
-
 	list-style-type: none;
 }
 
